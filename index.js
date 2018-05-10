@@ -102,6 +102,9 @@ app.get('/konttituotanto', (req, res) => {
     res.send(""+
             "drone on jenkins vastine\n"+
             "kääntää kontin\n"+
+            "pienemmät muutokset tuotantoon: vähemmän virheitä\n"+
+            "kontainerit tuotannossa... käytännössä tarvitaan orkestraattori\n"+
+            "tilalliset otukset, esim tietokannat: dockerin voluumit, kuberneteksen claimit\n"+
             "\n"+
             "\n"+
             "\n"+
@@ -111,8 +114,8 @@ app.get('/konttituotanto', (req, res) => {
 app.get('/tylsaa', (req, res) => {
     res.send(""+
             "konttien perusteita väännetään rautalangasta\n"+
-            "\n"+
-            "\n"+
+            "git rev-list HEAD...origin/master --count\n"+
+            "kertoo git muutosten määrän\n"+
             "\n"+
             "\n"+
             "\n"+
