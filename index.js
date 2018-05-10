@@ -100,8 +100,8 @@ app.get('/kontit', (req, res) => {
 });
 app.get('/konttituotanto', (req, res) => {
     res.send(""+
-            "\n"+
-            "\n"+
+            "drone on jenkins vastine\n"+
+            "kääntää kontin\n"+
             "\n"+
             "\n"+
             "\n"+
