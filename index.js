@@ -1,5 +1,27 @@
 const app = require('express')();
 
+
+
+
+
+app.get('/index', (req, res) => {
+    res.send(""+
+            "<a href='/'>/</a>\n"+
+            "<a href='/amazon'>/amazon</a>\n"+
+            "<a href='/lioncloud'>/lioncloud</a>\n"+
+            "<a href='/pilvi'>/pilvi</a>\n"+
+            "<a href='/mittausta'>/</a>\n"+
+            "<a href='/ci'>/</a>\n"+
+            "<a href='/kontit'>/</a>\n"+
+            "<a href='/konttituotanto'>/</a>\n"+
+            "<a href='/tylsaa'>/</a>\n"+
+            "<a href='/'>/</a>\n"+
+            "<a href='/'>/</a>\n"+
+            "<a href='/'>/</a>\n"+
+        "")
+});
+
+
 app.get('/', (req, res) => {
     res.send("Cinia DevCon Mass Nerds.")
 });
@@ -33,7 +55,7 @@ app.get('/pilvi', (req, res) => {
 
 app.get('/checkout', (req, res) => {
     res.send(""+
-            "kubernetes - mikä se on, mitä hyötyä\n"+
+            "kubernetes - mikropalvelujen orkestrointi\n"+
             "googlen pilvipalvelu\n"+
             "S3: palvelu lioncloudissa\n"+
             "\n"+
@@ -43,7 +65,7 @@ app.get('/checkout', (req, res) => {
 });
 
 
-app.get('/devopsmittausta', (req, res) => {
+app.get('/mittausta', (req, res) => {
     res.send(""+
             "taulukkoa eri actioneista ja millisekunneista\n"+
             "taulukkoa tietokantahausta ja millisekunneista\n"+
@@ -66,7 +88,17 @@ app.get('/ci', (req, res) => {
 });
 
 
-app.get('/ci', (req, res) => {
+app.get('/kontit', (req, res) => {
+    res.send(""+
+            "early adoption puoles vaiheessa, legacya on paljon\n"+
+            "kirjastojen riippuvuuksien hallinta\n"+
+            "immutable infrastructure, joka mikropalvelulle oma virtuaalikone\n"+
+            "joka kontille voi asettaa resurssirajat, prossu, muisti\n"+
+            "\n"+
+            "\n"+
+        "")
+});
+app.get('/konttituotanto', (req, res) => {
     res.send(""+
             "\n"+
             "\n"+
@@ -76,19 +108,9 @@ app.get('/ci', (req, res) => {
             "\n"+
         "")
 });
-app.get('/ci', (req, res) => {
+app.get('/tylsaa', (req, res) => {
     res.send(""+
-            "\n"+
-            "\n"+
-            "\n"+
-            "\n"+
-            "\n"+
-            "\n"+
-        "")
-});
-app.get('/ci', (req, res) => {
-    res.send(""+
-            "\n"+
+            "konttien perusteita väännetään rautalangasta\n"+
             "\n"+
             "\n"+
             "\n"+
