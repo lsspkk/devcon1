@@ -116,8 +116,10 @@ app.get('/tylsaa', (req, res) => {
             "konttien perusteita väännetään rautalangasta\n"+
             "git rev-list HEAD...origin/master --count\n"+
             "kertoo git muutosten määrän\n"+
-            "\n"+
-            "\n"+
+            "vielä joku komento, jotta edellinen kontti sulkeutuu ja nykyne avataan\n"+
+            "docker run --name devcon1 -p 3000:3000 -d devcon1"+
+            ""+
+            "http://markshust.com/2016/08/14/create-and-deploy-nodejs-express-app-docker\n"+
             "\n"+
         "")
 });
