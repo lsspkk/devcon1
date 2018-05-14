@@ -1,0 +1,69 @@
+mikropalvelu
+
+itsenäinen komponentti, hallinnoi omaa dataa, oma prosessi,
+kommunikoi määriteltyjen rajapintojen kautta
+
+
+datamalli.... 
+vain yksi mikropalvelu hallitsee omaa tietorakennettaan
+
+eriyttäminen
+
+
+transaktion yhtenäisyys
+eventual consistency näin:
+muita mikropalveluita käyttävä service tekee tapahtumajonon,
+jonka kautta kutsuu rest tms. palveluita kunnes kaikki ok
+
+event driven arkkitehtuuri näin: 
+muita mikropalveluita käyttävä service lähettää tapahtumasta
+eventit eteenpäin ja "event topic" 
+
+CQRS fowlerin mikropalveluiden yhteistoiminta
+
+
+monoliitistä alkaa kirjaamaan tapahtumia redisiin tms.
+uusi ominaisuus koodataan redisin viestejä käsittelemällä
+
+
+12factor.net    
+
+
+
+
+
+
+
+
+
+
+
+--
+jenkinsiin
+- mahdollisuus ajaa ttmppweb-koneelta joku komento ttmppsem:llä, 
+  jotta koodin käännös käynnistäisi palvelimen uudestaan
+- mahdollisuus kääntää palvelut dockeriin, ttmppwebin alle,
+  ja ajaa robot-käyttöliittymätestit siinä
+- ttmppwebbiin robotframework
+
+
+
+mikropalvelu-splittaus
+- tilaukset
+- käyttäjät, roolit
+- cmp
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
